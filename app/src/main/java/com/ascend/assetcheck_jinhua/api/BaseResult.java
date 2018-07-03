@@ -5,9 +5,26 @@ package com.ascend.assetcheck_jinhua.api;
  * created at 2018-06-29 9:46
  */
 public class BaseResult {
-    private String code="0";//测试用
-    private String msg;
+    private String resultCode="0";//测试用
+    private String message;
     private int count;
+
+    public String getResultCode() {
+        return resultCode;
+    }
+
+    public void setResultCode(String resultCode) {
+        this.resultCode = resultCode;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     /**
      * error : unauthorized
      */
@@ -20,22 +37,6 @@ public class BaseResult {
 
     public void setCount(int count) {
         this.count = count;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
     }
 
     //    {"access_token":"8ea41eda-f39b-44aa-b7d9-a4c38aeb046a","token_type":"bearer","expires_in":2525398,"scope":"app"}
@@ -97,8 +98,6 @@ public class BaseResult {
     @Override
     public String toString() {
         return "BaseResult{" +
-                "code='" + code + '\'' +
-                ", msg='" + msg + '\'' +
                 ", count=" + count +
                 ", error='" + error + '\'' +
                 ", access_token='" + access_token + '\'' +
