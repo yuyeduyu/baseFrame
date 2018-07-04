@@ -48,6 +48,8 @@ public class StartPandianActivity extends BaseActivity {
 
     private AbnormalAdapter abnormalAdapter;
     private List<String> abnormalDatas;
+
+    private String data;
     @Override
     protected void findViews(Bundle savedInstanceState) {
         super.findViews(savedInstanceState);
@@ -57,6 +59,9 @@ public class StartPandianActivity extends BaseActivity {
     @Override
     protected void initViews() {
         super.initViews();
+        data = getIntent().getStringExtra("data");
+        title.setText(data);
+        bgFinish.setVisibility(View.VISIBLE);
         initRecyle();
     }
 
