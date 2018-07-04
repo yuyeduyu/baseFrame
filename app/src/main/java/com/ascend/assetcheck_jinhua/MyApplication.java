@@ -53,7 +53,7 @@ public class MyApplication extends MultiDexApplication {
         // 在使用 SDK 各组间之前初始化 context 信息，传入 ApplicationContext
 
         // 出现应用级异常时的处理
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+       /* Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             String errMsg = "";
 
             @Override
@@ -93,7 +93,7 @@ public class MyApplication extends MultiDexApplication {
                     Log.e(Settings.TAG, throwable.getMessage(), throwable);
                 }
             }
-        });
+        });*/
     }
 
 

@@ -3,6 +3,7 @@
     package="com.ascend.assetcheck_jinhua">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -18,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.PandianActivity" />
+        <activity android:name=".ui.activity.StartPandianActivity"></activity>
     </application>
 
 </manifest>
